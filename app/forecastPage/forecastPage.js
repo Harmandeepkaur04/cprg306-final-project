@@ -1,8 +1,9 @@
 "use client"; // Ensure this line is at the top
 
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './styles.css';
+import './styless.css';
 
 const ForecastPage = () => {
   const [weatherData, setWeatherData] = useState(null);

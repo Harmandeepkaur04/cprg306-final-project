@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './styles.css';
+import Link from 'next/link';
+
 const CurrentWeatherPage = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
