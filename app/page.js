@@ -1,5 +1,3 @@
-import Image from "next/image";
-import HomePage from "./pages/homePage";
 import WeatherPage from "./mainPage/mainpage";
 
 export default function Home() {
