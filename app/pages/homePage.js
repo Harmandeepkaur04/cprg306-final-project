@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from 'react';
 import WeatherCard from '../components/weatherCard';
 import AlertComponent from '../components/alertComponent';
