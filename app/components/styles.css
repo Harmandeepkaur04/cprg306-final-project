@@ -1,0 +1,39 @@
+/* Navbar.module.css */
+
+/* Navbar Container */
+nav {
+    background-color: #ffffff; /* Or choose a different background color */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Navbar List */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+  }
+  
+  /* Navbar List Item */
+  li {
+    margin: 0;
+  }
+  
+  /* Navbar Link */
+  .link {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover State */
+  .link:hover {
+    color: #4a90e2; /* Accent color */
+    text-decoration: underline;
+  }
+  

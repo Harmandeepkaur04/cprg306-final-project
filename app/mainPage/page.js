@@ -13,7 +13,7 @@ const CurrentWeatherPage = () => {
   const apiKey = '1112a0ee0dbd41f585ad7e5fc8ae69b2'; 
 
   // Define parameters
-  const city = 'Raleigh,NC'; // City name
+  const city = 'Calgary,AB'; // City name
 
   useEffect(() => {
     const fetchWeatherData = async () => {
