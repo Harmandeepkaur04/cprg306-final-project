@@ -43,55 +43,67 @@ const CurrentWeatherPage = () => {
       {weatherData ? (
         <div className="info">
           <div className="info-item">
-            <div className="weather-icon">🌤️</div>
+            <div className="weather-icon">🌆</div>
             <h3>City</h3>
             <p>{weatherData.data[0].city_name}</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">🕒</div>
             <h3>Observation Time</h3>
             <p>{weatherData.data[0].ob_time}</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">🌡️</div>
             <h3>Temperature</h3>
             <p>{weatherData.data[0].temp}°C</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">🌡️</div>
             <h3>Feels Like</h3>
             <p>{weatherData.data[0].app_temp}°C</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">💧</div>
             <h3>Humidity</h3>
             <p>{weatherData.data[0].rh}%</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">🌬️</div>
             <h3>Pressure</h3>
             <p>{weatherData.data[0].pres} mb</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">💨</div>
             <h3>Wind Speed</h3>
             <p>{weatherData.data[0].wind_spd} m/s</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">☁️</div>
             <h3>Cloud Coverage</h3>
             <p>{weatherData.data[0].clouds}%</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">👁️</div>
             <h3>Visibility</h3>
             <p>{weatherData.data[0].vis} km</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">🌥️</div>
             <h3>Weather Description</h3>
             <p>{weatherData.data[0].weather.description}</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">☀️</div>
             <h3>UV Index</h3>
             <p>{weatherData.data[0].uv}</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">🌅</div>
             <h3>Sunrise</h3>
             <p>{weatherData.data[0].sunrise}</p>
           </div>
           <div className="info-item">
+            <div className="weather-icon">🌇</div>
             <h3>Sunset</h3>
             <p>{weatherData.data[0].sunset}</p>
           </div>
