@@ -1,6 +1,8 @@
 "use client"; 
 
 import React, { useState } from 'react';
+import './styles.css'; 
+
 
 const Settings = () => {
   const [units, setUnits] = useState('metric');

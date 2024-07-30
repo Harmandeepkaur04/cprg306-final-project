@@ -1,6 +1,7 @@
 "use client"; 
 
 import React, { useState } from 'react';
+import './styles.css'; 
 
 const Feedback = () => {
   const [feedback, setFeedback] = useState('');
