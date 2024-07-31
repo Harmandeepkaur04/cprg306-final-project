@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import './styles.css';
 
 const Navbar = () => {
   const linkStyles = "underline text-cyan-600 hover:text-cyan-300";
@@ -10,6 +11,7 @@ const Navbar = () => {
         <li><Link className={linkStyles} href="/alertsPage/">Alerts</Link></li>
         <li><Link className={linkStyles} href="/settingsPage/">Settings</Link></li>
         <li><Link className={linkStyles} href="/feedbackPage/">Feedback</Link></li>
+        <li><Link className={linkStyles} href="/forecastPage/">7 Day Forecast</Link></li>
       </ul>
     </nav>
   );

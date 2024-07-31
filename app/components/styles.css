@@ -1,39 +1,47 @@
-/* Navbar.module.css */
-
 /* Navbar Container */
 nav {
-    background-color: #ffffff; /* Or choose a different background color */
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #e0e0e0;
+  background: linear-gradient(90deg, #005b9a, black);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar List */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Links */
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; 
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  color: black; 
+  background-color:rgb(255, 73, 73); 
+  border-radius: 4px;
+  transform: scale(1.1);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Navbar List */
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around; /* Adjust spacing between items */
+
+  nav ul li {
+    margin-bottom: 0.5rem;
   }
-  
-  /* Navbar List Item */
-  li {
-    margin: 0;
-  }
-  
-  /* Navbar Link */
-  .link {
-    text-decoration: none;
-    color: #1a1a1a;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  /* Hover State */
-  .link:hover {
-    color: #4a90e2; /* Accent color */
-    text-decoration: underline;
-  }
-  
+}

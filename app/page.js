@@ -10,7 +10,7 @@ export default function Home() {
     <main className="bg-#2987ff-50">
       <Navbar/>
       <WeatherPage/>
-      <li><Link className={linkStyles} href="./forecastPage/forecastPage/">7 Day Forecast</Link></li>
+      
       
     </main>
   );
