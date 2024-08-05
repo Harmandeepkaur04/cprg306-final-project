@@ -1,33 +1,156 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.app-name {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  font-family: 'Arial', sans-serif; /* You can change the font family to something you prefer */
+  color: #333; /* Adjust the color as needed */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Weather Information Section */
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+.info-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.info-item h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Weather Icon */
+.weather-icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #4a90e2;
+}
+
+/* City and Date */
+.city, .datetime {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #7a8c99;
+  margin-bottom: 15px;
+}
+
+/* Loading and Error Messages */
+.loading, .error {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.loading {
+  color: #4a90e2;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .info {
+    grid-template-columns: 1fr; /* One column on small screens */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .info-item {
+    padding: 15px;
   }
 }
