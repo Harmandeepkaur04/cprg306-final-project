@@ -3,6 +3,8 @@ import WeatherPage from "./mainPage/page";
 import Navbar from './components/page';
 
 
+
+
 export default function Home() {
 
   const linkStyles = "underline text-cyan-600 hover:text-cyan-300";
